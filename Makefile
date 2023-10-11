@@ -6,7 +6,7 @@ OBJ_DIR = build
 MOD_DIR = include
 LIBRARY = librandom.a
 # List of source files
-SRCS = $(wildcard $(SRC_DIR)/*.f90)
+SRCS = src/rand.f90 src/pcg32.f90 src/splitmix64.f90 src/xoshiro.f90
 
 # Generate object file names based on source file names
 OBJS = $(patsubst $(SRC_DIR)/%.f90,$(OBJ_DIR)/%.o,$(SRCS))
